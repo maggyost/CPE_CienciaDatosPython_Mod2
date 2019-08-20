@@ -8,7 +8,4 @@ Author : Jaime Gomez
 '''
 
 
-
-
-
 import pandas as pd
