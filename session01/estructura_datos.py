@@ -12,3 +12,12 @@ paises = {"ARG":"Argentina","PER":"Perú","ECU":"Ecuador"}
 
 for key, value in paises.items():
     print(key,"--->",value)
+
+# Increment and Decrement Operators
+a = 5
+a += 2
+print(a)
+
+b = 5
+b -= 2
+print(b)

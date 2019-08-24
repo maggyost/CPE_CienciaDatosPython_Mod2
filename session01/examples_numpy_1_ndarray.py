@@ -93,10 +93,3 @@ print("np.random.random(4) --> ",nros_array)
 
 nros_array = np.random.random((2,3))
 print("np.random.random((2,3)) --> ",nros_array)
-
-# Basic Operations
-
-# Arithmetic Operators
-
-
-

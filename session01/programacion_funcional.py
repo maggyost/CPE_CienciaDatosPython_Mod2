@@ -108,9 +108,6 @@ res = reduce(lambda x,y : x+y, range(n + 1))
 
 print("reduce() :",res)
 
-
-
-
 # List comprehension.
 
 print("------------------------------------")
@@ -134,4 +131,3 @@ def map_funciones_2(valor, functiones):
     return [funcion(valor) for funcion in functiones]
 
 print("Resultado --> ", map_funciones_2(nro_list, funciones))
-
