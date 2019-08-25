@@ -11,8 +11,6 @@ import numpy as np
 
 # General Concepts
 
-# Joining Arrays
-
 # References of Objects
 print("------------------------------------")
 a = np.array([1, 2, 3, 4])
@@ -45,7 +43,6 @@ print("a :",a)
 print("c :",c)
 
 # Copies of Objects
-
 print("------------------------------------")
 a = np.array([1, 2, 3, 4])
 # Se realiza una copia
@@ -85,7 +82,8 @@ b_matriz = np.ones((4,4))
 c_matriz = np.dot(a_matriz,b_matriz)
 print("a_matriz : \n",a_matriz)
 print("b_matriz : \n",b_matriz)
-print("np.dot(a_matriz,b_matriz) : \n", c_matriz )
+print("np.dot(a_matriz,b_matriz) : \n"
+      , c_matriz )
 
 print("------------------------------------")
 a_matriz = np.arange(0,16).reshape(4,4)
@@ -93,8 +91,8 @@ b_matriz = np.ones((4,4))
 c_matriz = a_matriz.dot(b_matriz)
 print("a_matriz : \n",a_matriz)
 print("b_matriz : \n",b_matriz)
-print("a_matriz.dot(b_matriz) : \n", c_matriz)
-
+print("a_matriz.dot(b_matriz) : \n"
+      , c_matriz)
 
 # Broadcasting
 print("------------------------------------")
@@ -138,13 +136,16 @@ print("------------------------------------")
 estructura \
     = np.array([(1,"Uno",0.5),
                 (2,"Dos",1.5),
-                (3,"Tres",2.5)],dtype=('i2,a6,f4'))
+                (3,"Tres",2.5)],
+               dtype=('i2,a6,f4'))
 
 print(estructura.dtype)
 print(estructura)
 
-print("estructura[0] : ",estructura[0])
-print("estructura['f0'] : ",estructura['f0'])
+print("estructura[0] : "
+      ,estructura[0])
+print("estructura['f0'] : "
+      ,estructura['f0'])
 
 print("------------------------------------")
 estructura \

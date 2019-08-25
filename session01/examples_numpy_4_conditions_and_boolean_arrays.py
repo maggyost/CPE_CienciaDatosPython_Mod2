@@ -11,13 +11,13 @@ import numpy as np
 
 # Conditions and Boolean Arrays
 print("------------------------------------")
-
 a_matriz = np.random.random((4,4))
 print(a_matriz)
 
 #print(np.round(1.335,decimals=2))
 
-a_m = np.apply_along_axis(np.round, axis=1, arr=a_matriz, decimals=2)
+a_m = np.apply_along_axis(np.round,
+            axis=1, arr=a_matriz, decimals=2)
 print(a_m)
 
 # Se muestran la tabla booleana

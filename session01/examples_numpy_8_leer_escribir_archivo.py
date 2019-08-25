@@ -9,9 +9,7 @@ Author : Jaime Gomez
 
 import numpy as np
 
-
 # Loading and Saving Data in Binary Files
-
 print("------------------------------------")
 NOMBRE_ARCHIVO = 'archivo_binario.npy'
 datos = np.random.random(9).reshape((3,3))
@@ -22,27 +20,22 @@ datos_cargados = np.load(NOMBRE_ARCHIVO)
 
 print("datos_cargados : \n",datos_cargados)
 
-# Reading Files with Tabular Data
-
+# Reading files CSV
 print("------------------------------------")
 NOMBRE_ARCHIVO = \
     'medallero_Panamericanos_Lima2019.csv'
-
 datos = \
     np.genfromtxt(NOMBRE_ARCHIVO, delimiter=','
                   ,names=True, dtype=None)
-
 print(datos)
 
 print("------------------------------------")
 NOMBRE_ARCHIVO = \
     'medallero_Panamericanos_Lima2019.csv'
-
 datos = \
     np.genfromtxt(NOMBRE_ARCHIVO, delimiter=','
                   ,names=True, dtype=None
                   ,encoding="utf-8")
-
 print(datos)
 
 # encode() y decode()
