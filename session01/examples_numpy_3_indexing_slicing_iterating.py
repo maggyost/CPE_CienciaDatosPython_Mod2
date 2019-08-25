@@ -99,7 +99,7 @@ def es_impar(x):
             x[i] = - 1
     return x
 
-# Procesa el promedio de la matriz por fila
-a_m = np.apply_along_axis(es_impar, axis=1,
+# Procesa si un numero es impar por fila
+a_m = np.apply_along_axis(es_impar, axis=0,
                           arr=a_matriz)
 print(a_m)
