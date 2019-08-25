@@ -35,27 +35,31 @@ print("a_array : \n",a_array)
 print("a_array*5 : \n",a_array * 5)
 
 print("------------------------------------")
+c_array = a_array * np.sqrt(b_array)
 print("a_array : \n",a_array)
 print("b_array : \n",b_array)
-print("a_array * np.sqrt(b_array) : \n",a_array * np.sqrt(b_array))
+print("a_array * np.sqrt(b_array) : \n", c_array)
 
 print("------------------------------------")
 a_matriz = np.arange(0,16).reshape(4,4)
 b_matriz = np.ones((4,4))
+c_matriz = a_matriz*b_matriz
 print("a_matriz : \n",a_matriz)
 print("b_matriz : \n",b_matriz)
-print("a_matriz * b_matriz : \n", a_matriz*b_matriz)
+print("a_matriz * b_matriz : \n", c_matriz)
 
-# The Matrix Product
+# The Matriz Product
 print("------------------------------------")
+c_matriz = np.dot(a_matriz,b_matriz)
 print("a_matriz : \n",a_matriz)
 print("b_matriz : \n",b_matriz)
-print("np.dot(a_matriz,b_matriz) : \n", np.dot(a_matriz,b_matriz))
+print("np.dot(a_matriz,b_matriz) : \n", c_matriz )
 
 print("------------------------------------")
+c_matriz = a_matriz.dot(b_matriz)
 print("a_matriz : \n",a_matriz)
 print("b_matriz : \n",b_matriz)
-print("a_matriz.dot(b_matriz) : \n", a_matriz.dot(b_matriz))
+print("a_matriz.dot(b_matriz) : \n", c_matriz)
 
 # Increment and Decrement Operators
 
