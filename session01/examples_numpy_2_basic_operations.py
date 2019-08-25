@@ -80,7 +80,7 @@ print("------------------------------------")
 
 a_array = np.arange(4,8)
 print("a_array : \n",a_array)
-print("np.pow(a_array,2) : \n",np.power(a_array,2))
+print("np.power(a_array,2) : \n",np.power(a_array,2))
 
 # Aggregate Functions
 
