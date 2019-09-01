@@ -119,7 +119,9 @@ def cal_desviacion_estandar():
 
 
 if __name__ == '__main__':
-    #print(df.Oro.describe())
+    print(df.describe())
     #cal_correlacion()
+    #cal_percentiles()
     #graph_percentiles()
-    print(round(df.mean(),2))
+    #print(round(df.mean(),2))
+    cal_varianza()
