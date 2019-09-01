@@ -12,8 +12,8 @@ import numpy as np
 
 #df = pd.read_csv("medallero_Panamericanos_Lima2019.csv", header= 0)
 df = pd.read_csv("medallero_Panamericanos_Lima2019.csv")
-
-print(df.head())
+print(df)
+#print(df.head())
 
 def calc_suma():
     ''' Obtiene la suma de una columna de un dataframe'''
@@ -40,13 +40,37 @@ def obtener_media(redondeo = 2):
     media =  round(media,redondeo)
     return media
 
+def obtener_mediana():
+
+    nro_item = np.size(df.Oro)
+    pos_mediana = round(nro_item / 2)
+    print("posicion mediana = ",pos_mediana)
+    mediana = df.Oro[pos_mediana-1]
+
+#    mediana =  np.median(df.Oro)
+
+#    mediana = df.Oro.median()
+
+    return mediana
+
 if __name__ == '__main__':
     #calc_suma()
     #calc_nro_elementos()
     #calc_media()
+    '''
     print(obtener_media())
     print(obtener_media(redondeo = 4))
     print(df.Oro.mean())
     print(df.mean())
     print(round(df.mean(),2))
     print(type(df.mean()))
+    '''
+    print(obtener_mediana())
+
+    print("------------")
+    print(np.sort(df.Plata)[16-1])
+    print(df.Plata.median())
+
+    print("------------")
+    print(np.sort(df.Bronce)[16-1])
+    print(df.Bronce.median())
