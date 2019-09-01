@@ -1,5 +1,10 @@
 '''
-
+Programa : Ciencia de Datos con Pthon
+Modulo 02 : Estadística y Visualización de Datos con Python
+Sesion 01 : Fundamentos de Estadistica
+Fecha : 01/09/2019
+Version : 1
+Author : Jaime Gomez
 '''
 
 import pandas as pd

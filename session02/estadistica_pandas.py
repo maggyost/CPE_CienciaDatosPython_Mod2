@@ -1,5 +1,10 @@
 '''
-
+Programa : Ciencia de Datos con Pthon
+Modulo 02 : Estadística y Visualización de Datos con Python
+Sesion 01 : Fundamentos de Estadistica
+Fecha : 01/09/2019
+Version : 1
+Author : Jaime Gomez
 '''
 import pandas as pd
 import numpy as np
@@ -22,7 +27,7 @@ def cal_media():
     print("sumatoria ,", sumatoria)
     print("elementos ,", nro_item)
     print("media manual = ", sumatoria/nro_item)
-    print("media = ", mean)
+    print("media =  ", mean)
 
 # Outliers
 def cal_outliers():
@@ -116,4 +121,5 @@ def cal_desviacion_estandar():
 if __name__ == '__main__':
     #print(df.Oro.describe())
     #cal_correlacion()
-    graph_percentiles()
+    #graph_percentiles()
+    print(round(df.mean(),2))
