@@ -53,6 +53,59 @@ def obtener_mediana():
 
     return mediana
 
+
+def obtener_moda():
+
+    moda = df.Oro.mode()
+    return moda
+
+# Percentiles
+def cal_percentiles():
+    print("---------------------------------")
+    tramos = [25,50,75]
+    percentiles = np.percentile(df['Oro'],tramos)
+    print("percentiles = ", percentiles )
+
+# Grafico Percentiles
+def graph_percentiles():
+    import matplotlib.pyplot as plt
+    import seaborn as sns
+    sns.boxplot(y="Oro", data= df)
+    plt.show()
+
+# Varianza
+def cal_varianza():
+
+#    print(type(df['Oro'] ))
+#    print(type(df[['Oro']] ))
+
+    diff = df['Oro'] - df['Oro'].mean()
+    print(type(diff))
+    diff2 = np.power(diff,2)
+    print(type(diff2))
+    nro_item = np.size(df['Oro'])
+    print("diff2.sum() = ", diff2.sum())
+    var_manual = (diff2.sum()/nro_item)  #['Oro']
+    print("type(var_manual) = ", type(var_manual))
+    print("varianza manual = ", var_manual)
+
+    var = df['Oro'].var(ddof=0)  # corrección de Bessel
+    print("varianza = ", var)
+    print("varianza = ", np.var(df['Oro']))
+
+# Varianza
+def cal_varianza_2():
+    diff = df['Oro'] - df['Oro'].mean()
+    diff2 = np.power(diff,2)
+    nro_item = np.size(df['Oro'])
+    var_manual = (diff2.sum()/nro_item)
+    print("type(var_manual) = ", type(var_manual))
+    print("varianza manual = ", var_manual)
+
+    var = df['Oro'].var(ddof=0)  # corrección de Bessel
+    print("varianza = ", var)
+    print("varianza = ", np.var(df['Oro']))
+
 if __name__ == '__main__':
     #calc_suma()
     #calc_nro_elementos()
@@ -65,6 +118,7 @@ if __name__ == '__main__':
     print(round(df.mean(),2))
     print(type(df.mean()))
     '''
+    '''
     print(obtener_mediana())
 
     print("------------")
@@ -74,3 +128,11 @@ if __name__ == '__main__':
     print("------------")
     print(np.sort(df.Bronce)[16-1])
     print(df.Bronce.median())
+    '''
+    '''
+    print(obtener_moda())
+    print(df.Oro.value_counts())
+    cal_percentiles()
+    graph_percentiles()
+    '''
+    cal_varianza_2()
