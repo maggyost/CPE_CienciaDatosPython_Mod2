@@ -5,6 +5,8 @@ Sesion 03 : Herramientas Básicas de Visualización
 Fecha : 07/09/2019
 Version : 1
 Author : Jaime Gomez
+Link : https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.plot.html#matplotlib.pyplot.plot
+
 '''
 import pandas as pd
 
